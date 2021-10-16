@@ -21,7 +21,7 @@ describe('About Expects', function() {
     var actualValue = 1 + 1;
 
   // toEqual() compares using common sense equality.
-    expect('Fill this value in').toEqual(expectedValue);
+    expect(actualValue).toEqual(2);
   });
 
   // Sometimes you need to be precise about what you "type."
@@ -30,11 +30,11 @@ describe('About Expects', function() {
     var actualValue = (1 + 1).toString();
 
   // toBe() will always use === to compare.
-    expect('Fill this value in').toBe(expectedValue);
+    expect(actualValue).toBe("2");
   });
 
   // Sometimes we will ask you to fill in the values.
   it('should have filled in values', function() {
-    expect('Fill this value in').toEqual('Fill this value in');
+    expect(1 + 1).toEqual(2);
   });
 });
